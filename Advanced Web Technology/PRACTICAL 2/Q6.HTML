@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rashi's Café Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="https://images.pexels.com/photos/302901/pexels-photo-302901.jpeg" style="background-size: cover; background-position: center; color: white; text-align: center; font-family: Arial, sans-serif;">
+
+    <h1>Welcome to Rashi's Café</h1>
+    <h2>Discover our delicious coffee selections</h2>
+
+    <div class="container">
+        
+        <!-- Espresso -->
+        <div class="menu-item">
+            <h2>Espresso</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG" alt="Espresso" width="250">
+            <p id="coffee1" style="display:none">
+                A strong and bold coffee brewed by forcing hot water through finely-ground coffee beans.
+            </p>
+            <button type="button" onclick="toggleInfo('coffee1')">Click for Info</button>
+        </div>
+
+        <!-- Cappuccino -->
+        <div class="menu-item">
+            <h2>Cappuccino</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Cappuccino_at_Sightglass_Coffee.jpg" alt="Cappuccino" width="250">
+            <p id="coffee2" style="display:none">
+                A delicious Italian coffee made with espresso, steamed milk, and topped with milk foam.
+            </p>
+            <button type="button" onclick="toggleInfo('coffee2')">Click for Info</button>
+        </div>
+
+        
+
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            var x = document.getElementById(id);
+            x.style.display = (x.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

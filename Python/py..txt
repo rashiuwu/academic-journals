@@ -1,0 +1,3 @@
+Added using R+ mode+, rb, rb+, wb, wb+, ab, ab+
+Appending some text.
+Appending with A+ mode

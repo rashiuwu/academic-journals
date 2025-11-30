@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<h1>Rashi Sawardekar Roll no.-31010924093</h1>
+<script>
+let n1 = parseInt(prompt("Enter n1"));
+let n2 = parseInt(prompt("Enter n2"));
+let op = prompt("Enter operator (+, -, *, /, %)");
+
+let result;
+
+switch(op) {
+  case '+':
+    result = n1 + n2;
+    alert("Result: " + result);
+    break;
+  case '-':
+    result = n1 - n2;
+    alert("Result: " + result);
+    break;
+  case '*':
+    result = n1 * n2;
+    alert("Result: " + result);
+    break;
+  case '/':
+    if (n2 === 0) {
+      alert("Error: Division by zero");
+    } else {
+      result = n1 / n2;
+      alert("Result: " + result);
+    }
+    break;
+  case '%':
+    result = n1 % n2;
+    alert("Result: " + result);
+    break;
+  default:
+    alert("Wrong input, please enter a valid operator");
+}
+</script>
+</body>
+</html>
